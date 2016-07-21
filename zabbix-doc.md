@@ -1,14 +1,14 @@
-#Edit apt source list to add the PPA:
+#Install zabbix server on ubuntu 14.04
 
-- add ppa to source file
+- add zabbix package in source file
 
 		sudo nano /etc/apt/sources.list
 
 	Add the following items at the end of the file:
 
 		# Zabbix Application PPA
-		deb http://ppa.launchpad.net/tbfr/zabbix/ubuntu 		precise main
-		deb-src http://ppa.launchpad.net/tbfr/zabbix/		ubuntu precise main
+		deb http://ppa.launchpad.net/tbfr/zabbix/ubuntu precise main
+		deb-src http://ppa.launchpad.net/tbfr/zabbix/ubuntu precise main
 - Add the PPA's key so that apt-get trusts the source:
 
 		sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C407E17D5F76A32B
