@@ -84,6 +84,7 @@ Search and adjust the following data. (Or add them if they can't be found.)
 		$DB['DATABASE'] = 'zabbix';
 		$DB['USER'] = 'zabbix';	
 		$DB['PASSWORD'] = 'your_chosen_password_here'
+	```	
 
 - Then copy the example apache config to the /etc/apache2/conf-available/ directory to make Zabbix and Apache work together.
 
@@ -91,16 +92,14 @@ Search and adjust the following data. (Or add them if they can't be found.)
 
 	```
 sudo a2enconf zabbix.conf
-```
-
 	```
-sudo a2enmod alias
 
   ```
-  
-  ```
+sudo a2enmod alias
+	```
+  	```
 sudo service apache2 restart
- ```
+ 	```
 - Then edit the below file & start property yes
   
 		sudo nano /etc/default/zabbix-server
