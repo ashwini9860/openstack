@@ -1,6 +1,7 @@
 ####In /etc/zabbix/zabbix_agentd.conf add these entries in userparameter section
-#####create external_scripts folder unser /etc/zabbix & add all scripts their
+####create external_scripts folder unser /etc/zabbix & add all scripts their
 
+```
 UserParameter=nova-check,/etc/zabbix/external_scripts/check_nova.sh 192.168.0.21
 UserParameter=cinder-check,/etc/zabbix/external_scripts/check_cinder.sh 192.168.0.21
 UserParameter=image-list-check,/etc/zabbix/external_scripts/check_image-list.sh 192.168.0.21
