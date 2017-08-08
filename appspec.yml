@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+   - source: /
+     destination: /home/kumolus/deployweb
+hooks:
+   BeforeInstall:
+    - location: backup.sh
+      runas: root
+   AfterInstall:
+    - location: restartweb.sh
+      runas: root
